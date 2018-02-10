@@ -14,9 +14,9 @@ tar -xzf sourcemod.tar.gz
 
 
 #添加inc
-echo "Download morecolors inc"
-wget "https://www.doctormckay.com/download/scripting/include/morecolors.inc"
-mv morecolors.inc addons/sourcemod/scripting/include/morecolors.inc
+echo "Download multicolors inc"
+wget "https://raw.githubusercontent.com/Bara/Multi-Colors/master/addons/sourcemod/scripting/include/multicolors.inc" -q
+mv multicolors.inc addons/sourcemod/scripting/include/multicolors.inc
 
 
 #设置文件为可执行
