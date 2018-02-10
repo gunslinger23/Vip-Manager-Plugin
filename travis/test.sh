@@ -13,6 +13,12 @@ wget "http://www.sourcemod.net/latest.php?version=$1&os=linux" -q -O sourcemod.t
 tar -xzf sourcemod.tar.gz
 
 
+#添加inc
+echo "Download autoexecconfig inc"
+wget "https://raw.githubusercontent.com/Impact123/AutoExecConfig/development/autoexecconfig.inc" -q
+mv autoexecconfig.inc addons/sourcemod/scripting/include/autoexecconfig.inc
+
+
 #设置文件为可执行
 echo -e "Set compiler env ..."
 chmod +x addons/sourcemod/scripting/spcomp
