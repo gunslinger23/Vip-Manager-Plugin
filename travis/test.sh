@@ -13,12 +13,6 @@ wget "http://www.sourcemod.net/latest.php?version=$1&os=linux" -q -O sourcemod.t
 tar -xzf sourcemod.tar.gz
 
 
-#添加inc
-echo "Download multicolors inc"
-wget "https://raw.githubusercontent.com/Bara/Multi-Colors/master/addons/sourcemod/scripting/include/multicolors.inc" -q
-mv multicolors.inc addons/sourcemod/scripting/include/multicolors.inc
-
-
 #设置文件为可执行
 echo -e "Set compiler env ..."
 chmod +x addons/sourcemod/scripting/spcomp
