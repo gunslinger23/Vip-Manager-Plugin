@@ -13,6 +13,12 @@ wget "http://www.sourcemod.net/latest.php?version=$1&os=linux" -q -O sourcemod.t
 tar -xzf sourcemod.tar.gz
 
 
+#添加inc
+echo "Download morecolors inc"
+wget "https://www.doctormckay.com/download/scripting/include/morecolors.inc"
+mv morecolors.inc addons/sourcemod/scripting/include/morecolors.inc
+
+
 #设置文件为可执行
 echo -e "Set compiler env ..."
 chmod +x addons/sourcemod/scripting/spcomp
